@@ -17,9 +17,16 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 90vh; 
     position: fixed; 
     z-index: 51;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+    padding: 1rem;
+    text-align: center;
+    line-height: 160%;
   }
 
   .outer_wrapper {
@@ -46,10 +53,17 @@
 
   .cactus {
     color: #D95D37;
-    width: 120px;
+    height: 140px;
     position: absolute;
-    bottom: 60px;
+    bottom: 58px;
     left: 5%;
+  }
+  .cactus2 {
+    color: #D95D37;
+    height: 140px;
+    position: absolute;
+    bottom: 58px;
+    right: 5%;
   }
   
   .cat {
@@ -317,4 +331,10 @@
   
   a:hover {
     text-decoration: underline;
+  }
+
+  @media screen and (max-width:500px) {
+    .cactus2 {
+      display: none;
+    }
   }
