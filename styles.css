@@ -24,9 +24,15 @@
 
   .text p {
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     text-align: center;
-    line-height: 160%;
+    line-height: 180%;
+    margin: 0 auto;
+  }
+
+  .text div {
+    padding-bottom: 1rem;
+    display: flex;
   }
 
   .outer_wrapper {
@@ -336,5 +342,13 @@
   @media screen and (max-width:500px) {
     .cactus2 {
       display: none;
+    }
+
+    .text {
+      font-size: 0.9;
+    }
+
+    .text p {
+      font-size: 0.7rem;
     }
   }
